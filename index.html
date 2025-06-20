@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pat 🦝🐕</title>
+    <link rel="icon" type="image/x-icon" href="./content/avatar.png">
   </head>
   <body>
     <nav style="border: double; padding: 2.5px; margin: 10px;">
@@ -77,6 +78,19 @@
     flex-direction: row;
     flex-wrap: wrap;
   }
+
+  @media (max-width: 768px) {
+  .hstack {
+    flex-direction: column !important;
+    align-items: center;
+  }
+  
+  .card {
+    flex: none !important;
+    width: 90%;
+    margin-bottom: 15px;
+  }
+}
 
   .spacer {
     padding: 10px;
