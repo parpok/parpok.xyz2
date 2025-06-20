@@ -3,3 +3,8 @@ services:
     build: .
     ports:
       - "2180:80"
+    develop:
+      watch:
+        - action: rebuild
+          path: ./
+          ignore: ./.github
