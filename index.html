@@ -6,17 +6,17 @@
     <title>Pat 🦝🐕</title>
   </head>
   <body>
-    <nav style="border: double; padding: 2.5px">
+    <nav style="border: double; padding: 2.5px; margin: 10px;">
       <a href="./">Pat</a>
     </nav>
 
     <div class="spacer"></div>
 
-    <div class="hstack">
+    <div class="hstack" style="margin-left: 10px; margin-right: 10px">
       <div
         class="card"
         id="profileCard"
-        style="border: dashed; padding: 10px; text-align: left"
+        style="border: dashed; padding: 10px; text-align: left; flex: 0 0 25%"
       >
         <img
           src="./content/avatar.png"
@@ -26,12 +26,17 @@
         />
         <h1>Pat</h1>
 
-        <p>lvl 19</p>
-        <p>bruh</p>
+        <p>dude</p>
+
+        <p>lvl <span id="age"></span></p>
       </div>
 
-      <div class="other" style="border: outset 2.5px; padding: 10px">
-        <p>I hate this shit</p>
+      <div class="spacer"></div>
+
+      <div class="other" style="border: outset 2.5px; padding: 10px; flex: 1;">
+        <p>Raccoon dog enjoyer</p>
+
+        <p>Using SwiftUI for iPhone apps enjoyer</p>
       </div>
     </div>
   </body>
@@ -52,6 +57,21 @@
     color: #f1e7d0;
   }
 
+  body a {
+    color: #f1e7d0;
+    text-decoration: none;
+  }
+
+  body a:visited {
+    color: #f1e7d0;
+    text-decoration: none;
+  }
+
+  body a:hover {
+    color: #f1e7d0;
+    text-decoration: underline;
+  }
+
   .hstack {
     display: flex;
     flex-direction: row;
@@ -62,3 +82,19 @@
     padding: 10px;
   }
 </style>
+
+<script>
+    function age() {
+    var today = new Date();
+
+    var bday = new Date(2006, 3, 7);
+
+    var diff = new Date(today.getTime() - bday.getTime());
+
+    var age = diff.getUTCFullYear() - 1970;
+    return age;
+  }
+
+document.getElementById("age").innerHTML = age();
+
+</script>
