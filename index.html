@@ -1,6 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <meta name="description" content="My personal page" />
+    <meta name="author" content="Parpok" />
+    <meta name="keywords" content="personal page, links" />
+    <meta property="og:title" content="Parpok" />
+    <meta property="og:description" content="My personal page" />
+    <meta property="og:image" content="https://parpok.xyz/content/avatar.png" />
+    <meta property="og:url" content="https://parpok.xyz" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="en_GB" />
+    <meta property="og:site_name" content="Parpok" />
+
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pat 🦝🐕</title>
@@ -9,26 +20,84 @@
   <body>
     <nav>
       <a href="./">Pats website</a>
+
+      <a href="">-</a>
+
+      <a href="https://github.com/parpok">Projects</a>
     </nav>
 
     <div class="spacer"></div>
 
     <div class="hstack">
-      <div class="card" id="profileCard">
-        <img src="./content/avatar.png" width="100px" height="100px" />
+      <div class="card profile" id="profileCard">
+        <img
+          src="./content/avatar.png"
+          width="100px"
+          height="100px"
+          alt="My avatar, Pat - a Raccoon dog, drawn by @av33ry"
+        />
         <h1>Pat</h1>
 
         <p>lazy dude</p>
 
         <p>lvl <span id="age"></span></p>
+
+        <p>Living in the middle of nowhere with beer</p>
+
+        <p>Raccoon dog enjoyer</p>
+
+        <p>Using SwiftUI for iPhone apps enjoyer</p>
+
+        <h3>Experience</h3>
+
+        <p>iPhone Apps using SwiftUI</p>
+
+        <p>
+          PHP Website(s) at school using LAMP Stack and all the very basic
+          WebDev
+        </p>
+
+        <p>Network and SysAdmin things - INF02 things</p>
+
+        <h4>Employability side</h4>
+
+        <p>Pessimistic about it tbh.</p>
+
+        <h4>Some things I've made:</h4>
+
+        <a href="https://github.com/parpok/parpok.xyz2"
+          >This website and tons of its variations I have on other git repos</a
+        >
+
+        <p>
+          iPhone App that was so bad I killed it - Rimo - iykyk I feel so
+          embarrased talking about it. At least it was something I put on the
+          App Store
+        </p>
+
+        <a href="https://github.com/parpok/spotter"
+          >App for Swift Student Challenge about car spotting - Spotter</a
+        >
+
+        <p>
+          PHP Project of a Shop website - might link it here if I clean up the
+          Personal details of other people from it.
+        </p>
+
+        <p>Homelab for self hosting things</p>
+
+        <h3>Socials:</h3>
+        <a href="mailto://pat@parpok.xyz">Mail</a>
+        <a href="https://twitter.com/parpok206">Twitter</a>
+        <a href="https://101010.pl/@parpok">Fedi</a>
+        <a href="https://github.com/parpok">GitHub</a>
       </div>
 
       <div class="spacer"></div>
 
-      <div class="other">
-        <p>Raccoon dog enjoyer</p>
-
-        <p>Using SwiftUI for iPhone apps enjoyer</p>
+      <div class="card content">
+        <h1><i>Currently empty space</i></h1>
+        <p><i>Head empty</i></p>
       </div>
     </div>
   </body>
@@ -49,17 +118,17 @@
     margin: 10px;
   }
 
-  nav a {
+  body a {
     color: #f1e7d0;
     text-decoration: none;
   }
 
-  nav a:visited {
+  body a:visited {
     color: #f1e7d0;
     text-decoration: none;
   }
 
-  nav a:hover {
+  body a:hover {
     color: #f1e7d0;
     text-decoration: underline;
   }
@@ -72,19 +141,19 @@
     margin-right: 10px;
   }
 
-  .card {
+  .profile {
     border: dashed;
     padding: 10px;
     text-align: left;
-    flex: 0 0 25%;
+    flex: 0 0 30%;
   }
 
-  .card img {
+  .profile img {
     border: dotted;
     border-radius: 50%;
   }
 
-  .other {
+  .content {
     border: outset 2.5px;
     padding: 10px;
     flex: 1;
@@ -95,14 +164,22 @@
   }
 
   @media (max-width: 768px) {
+    .nav {
+      margin-left: 5px;
+      margin-right: 5px;
+    }
+
     /* when display to thin hstack turns into vstack logic  */
     .hstack {
       flex-direction: column;
+      margin-left: 5px;
+      margin-right: 5px;
     }
 
     .card {
       flex: none !important;
       width: 100%;
+      box-sizing: border-box;
     }
   }
 </style>
