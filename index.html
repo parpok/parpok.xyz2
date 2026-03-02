@@ -52,12 +52,7 @@
 
         <p>iPhone Apps using SwiftUI</p>
 
-        <p>
-          PHP Website(s) at school using LAMP Stack and all the very basic
-          WebDev
-        </p>
-
-        <p>Network and SysAdmin things - INF02 things</p>
+        <p>INF02 and INF03 so sys admin and webdev stuff</p>
 
         <h3>
           Badges:
@@ -66,13 +61,27 @@
         <a href="https://breakgim.me"><img class="WebisteButton" src="https://breakgim.me/88x31/breakgimme.gif" alt="breakgimme website button"></a>
         <a href="https://smeagol.neocities.org"><img class="WebisteButton" src="https://breakgim.me/88x31/smeagol-button.gif" alt="śmigol website button"></a>
         <a href="https://www.apple.com/os/macos/"><img class="WebisteButton" src="./content/madewith_macos.gif" alt="Made with MacOS"></a>
-        <a href="https://tanu.moe"><img class="WebisteButton" src="./content/tanu88x31.png" alt="Tanu website button"></a>
+        <!-- <a href="https://tanu.moe"><img class="WebisteButton" src="./content/tanu88x31.png" alt="Tanu website button"></a> -->
 
         <h3>Socials:</h3>
         <a href="mailto://pat@parpok.xyz">Mail</a>
-        <a href="https://twitter.com/parpok206">Twitter</a>
         <a href="https://101010.pl/@parpok">Fedi</a>
         <a href="https://github.com/parpok">GitHub</a>
+      </div>
+
+      <div class="spacer"></div>
+
+      <div class="card content">
+        <h1><i>Forgot to say that I'm updating this website.</i></h1>
+        <p>Bothered to actually touch it knowing I made something new and needed updates.</p>
+      </div>
+
+      <div class="spacer"></div>
+
+      <div class="card content">
+        <h1><i>Dropped Twitter to be calmer.</i></h1>
+        <p><i>And I guess it works.</i></p>
+        <p>Less drama, less ragebait. Calmer overall. Partner was right. <br> Not sure If I should delete the account or just clean the posts or just go private IDK.</p>
       </div>
 
       <div class="spacer"></div>
@@ -83,6 +92,10 @@
         <p>limiting phone usage rn too much socals</p>
       </div>
     </div>
+
+    <footer>
+      <p>yeah not <span id="yearRN"></span></p>
+    </footer>
   </body>
 </html>
 
@@ -180,4 +193,12 @@
   }
 
   document.getElementById("age").innerHTML = age();
+
+  function currentYear(){
+    var today = new Date()
+    var year = today.getFullYear()
+    return year
+  }
+
+  document.getElementById("yearRN").innerHTML = currentYear();
 </script>
